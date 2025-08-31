@@ -1,0 +1,168 @@
+.SuccessPayment {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+.SuccessPayment .logo {
+  width: 100%;
+}
+.SuccessPayment main {
+  max-width: 75%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.SuccessPayment .icon {
+  color: #00e676;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.SuccessPayment h1 {
+  font-family: var(--PlayfairDisplay);
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--black-color);
+  letter-spacing: 2px;
+}
+.SuccessPayment p {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+.SuccessPayment .submit-checkout {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+.SuccessPayment .submit-checkout a {
+  width: 400px;
+  height: 45px;
+}
+
+@media (max-width: 808px) {
+  .SuccessPayment .icon {
+    font-size: 50px;
+  }
+  .SuccessPayment h1 {
+    font-size: 35px;
+  }
+  .SuccessPayment p {
+    font-size: 15px;
+  }
+  .SuccessPayment .submit-checkout a {
+    font-size: 14px;
+    width: 350px;
+    height: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .SuccessPayment .icon {
+    font-size: 40px;
+  }
+  .SuccessPayment h1 {
+    font-size: 25px;
+  }
+  .SuccessPayment p {
+    font-size: 12px;
+  }
+  .SuccessPayment .submit-checkout a {
+    font-size: 11px;
+    width: 250px;
+    height: 30px;
+  }
+}
+@media (max-width: 477px) {
+  .SuccessPayment .icon {
+    font-size: 35px;
+  }
+  .SuccessPayment h1 {
+    font-size: 20px;
+  }
+  .SuccessPayment p {
+    font-size: 10px;
+  }
+  .SuccessPayment .submit-checkout a {
+    font-size: 10px;
+    width: 150px;
+    height: 25px;
+  }
+  .SuccessPayment main {
+    max-width: 100%;
+  }
+}
+@media (max-width: 323px) {
+  .SuccessPayment .icon {
+    font-size: 30px;
+  }
+  .SuccessPayment h1 {
+    font-size: 15px;
+  }
+  .SuccessPayment p {
+    font-size: 8px;
+  }
+  .SuccessPayment .submit-checkout a {
+    font-size: 8px;
+    width: 100px;
+    height: 20px;
+  }
+}
+@media (max-width: 277px) {
+  .SuccessPayment .icon {
+    font-size: 22px;
+  }
+  .SuccessPayment h1 {
+    font-size: 12px;
+  }
+  .SuccessPayment p {
+    font-size: 6px;
+  }
+  .SuccessPayment .submit-checkout a {
+    font-size: 5px;
+    width: 100px;
+    height: 15px;
+  }
+}
+@media (max-width: 243px) {
+  .SuccessPayment .icon {
+    font-size: 18px;
+  }
+  .SuccessPayment h1 {
+    font-size: 10px;
+  }
+  .SuccessPayment p {
+    font-size: 4px;
+  }
+  .SuccessPayment .submit-checkout a {
+    font-size: 4px;
+    width: 60px;
+    height: 15px;
+  }
+}

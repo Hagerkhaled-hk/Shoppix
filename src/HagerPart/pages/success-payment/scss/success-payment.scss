@@ -1,0 +1,119 @@
+@use "../../../common_scss/commonScss.scss"as *;
+.SuccessPayment
+{
+padding: 30px;
+@include Col-Centering;
+gap:100px;
+.logo
+{
+    width: 100%;
+}
+    main{
+
+            max-width: 75%;
+            padding: 20px;
+@include Col-Centering;    
+    }
+
+        .icon {
+            color: #00e676;
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: var(--PlayfairDisplay);
+            font-size: 50px;
+            font-weight:500;
+            margin: 0;
+            color: var(--black-color);
+            letter-spacing: 2px;
+
+        }
+
+        p {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        .submit-checkout
+        {
+
+            justify-content: center;
+            margin-top: 30px;
+            a{
+                
+                width: 400px;
+                height: 45px;
+            }
+        }
+}
+
+
+@mixin updatePayment($icon-size,$h1-size,$p-size,$a-size,$a-w,$a-h)
+{
+ .SuccessPayment 
+    {
+
+        .icon
+        {
+            font-size: $icon-size;
+        }
+        h1
+        {
+            font-size: $h1-size;
+        }
+        p{
+            font-size: $p-size;
+        }
+
+        .submit-checkout a
+        {
+font-size:$a-size;
+width: $a-w;
+height: $a-h;
+        }
+    }
+}
+
+@media (max-width:808px) {
+   @include  updatePayment(50px,35px,15px,14px,350px,35px);
+
+    
+}
+
+@media (max-width:600px) {
+   @include  updatePayment(40px,25px,12px,11px,250px,30px);
+
+    
+}
+@media (max-width:477px) {
+   @include  updatePayment(35px,20px,10px,10px,150px,25px);
+   .SuccessPayment main
+   {
+   max-width:100%;
+   }
+
+    
+}
+@media (max-width:323px) {
+   @include  updatePayment(30px,15px,8px,8px,100px,20px);
+   
+
+    
+}
+@media (max-width:277px) {
+   @include  updatePayment(22px,12px,6px,5px,100px,15px);
+   
+
+    
+}
+@media (max-width:243px) {
+   @include  updatePayment(18px,10px,4px,4px,60px,15px);
+   
+
+    
+}

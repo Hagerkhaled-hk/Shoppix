@@ -1,0 +1,212 @@
+.ProductSummary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 420px;
+}
+.ProductSummary .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  height: 140px;
+}
+.ProductSummary .card .image {
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+}
+.ProductSummary .card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.ProductSummary .card .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.ProductSummary .card .text .name {
+  text-transform: uppercase;
+  color: var(--black-color);
+  font-size: 18px;
+}
+.ProductSummary .card .text .price p {
+  font-size: 14px;
+}
+.ProductSummary .card .text .price p:first-child {
+  font-weight: 500;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ProductSummary .card .text .price p:first-child span:first-child {
+  text-decoration: line-through;
+  margin: 0px;
+  color: var(--text-color);
+}
+.ProductSummary .card .text .price p:first-child span:last-child {
+  text-decoration: none !important;
+  color: white;
+  background-color: #E90000;
+  border-radius: 100px;
+  padding: 2px 8px;
+  margin-left: 5px;
+  font-size: 8px;
+}
+.ProductSummary .card .text .price p:last-child {
+  color: #E90000;
+  font-weight: 500;
+}
+.ProductSummary .card .text .buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ProductSummary .card .text .buttons .delete {
+  border-bottom: 1px solid #929292;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.ProductSummary .card .text .buttons .delete a {
+  color: #929292;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.ProductSummary .card .text .buttons .delete a span {
+  margin-right: 5px;
+}
+.ProductSummary .card .text .buttons .delete:hover {
+  border-color: #E90000;
+}
+.ProductSummary .card .text .buttons .delete:hover a {
+  color: #E90000;
+}
+.ProductSummary .note {
+  width: 100%;
+}
+.ProductSummary .note p {
+  color: var(--text-color);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.ProductSummary .note input {
+  width: 100%;
+  outline: none;
+  padding: 5px;
+  border: 1px solid var(--text-color);
+  -webkit-transition: 0.2px;
+  transition: 0.2px;
+}
+.ProductSummary .note input::-webkit-input-placeholder {
+  color: var(--text-color);
+  font-size: 13px;
+}
+.ProductSummary .note input::-moz-placeholder {
+  color: var(--text-color);
+  font-size: 13px;
+}
+.ProductSummary .note input:-ms-input-placeholder {
+  color: var(--text-color);
+  font-size: 13px;
+}
+.ProductSummary .note input::-ms-input-placeholder {
+  color: var(--text-color);
+  font-size: 13px;
+}
+.ProductSummary .note input::placeholder {
+  color: var(--text-color);
+  font-size: 13px;
+}
+.ProductSummary .note input:focus {
+  border-color: var(--input-border-color);
+}
+
+.ProductSummary .QuantityButton {
+  width: 90px;
+  height: 30px;
+}
+
+.checkoutForm .card {
+  height: 100px;
+}
+.checkoutForm .card .image {
+  width: 100px;
+}
+.checkoutForm .card .text {
+  font-size: 13px;
+  color: var(--sec-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.checkoutForm .card .text .name {
+  font-size: 15px;
+}
+.checkoutForm .card .text .check-quote {
+  color: var(--imp-color);
+}

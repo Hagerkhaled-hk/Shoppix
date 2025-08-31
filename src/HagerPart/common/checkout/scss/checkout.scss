@@ -1,0 +1,581 @@
+@use "../../../common_scss/commonScss.scss" as *;
+
+.Checkout
+{
+
+    display: grid;
+    grid-template-columns:1.8fr 1.2fr;
+   height: 100vh;
+   overflow-y: hidden;
+   padding: 25px;
+    h2
+    {
+        color: var(--black-color);
+        font-family: var( --PlayfairDisplay);
+        font-size: var(--header-font);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .left
+    {
+        @include Col-start;
+        gap:35px;
+        .steps
+        {
+            width: 65%;
+            @include between-center;  
+            gap: 20px;
+            position: relative;
+          
+
+
+
+            .step{
+
+         color: var(--text-color);
+         position: relative;
+         z-index: 4;
+
+ 
+
+        .icon
+        {
+            border: 1px solid var(--text-color);
+            width: fit-content;
+            border-radius: 50%;
+            padding: 10px;
+position: relative;
+        overflow: hidden;
+
+        }
+
+
+
+
+
+
+    }
+                }
+
+    }
+}
+
+
+.Checkout
+{
+
+
+    .left
+    {
+        .steps
+        {
+            .step
+            {
+
+      p{
+         background-color: white;
+width: 150px;
+            &:nth-of-type(2)
+            {
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+
+      
+
+          &:nth-of-type(2)
+  {
+    position: relative;
+
+    @mixin split()
+    { content: '';
+                position: absolute;
+                display: block;
+            background-color: var(--text-color);
+            height: 2px;
+            width: 120px;
+            z-index: 3;
+            top: 18px;
+opacity: 0.5;
+    }
+              &::before,&::after{
+@include split();
+               
+                }
+              &::after{
+            right: -25px;
+                    }
+              &::before{
+                        left: -140px;
+                    }
+        }
+
+
+        
+                  &.active
+        {
+            .icon
+            {
+
+                background-color: #EDE5E1;
+            }
+            color: #8B4513;
+        }
+
+&.done
+{
+
+    .icon::before
+    {
+
+        content: '';
+        background:url( "../../../../assets/hager-images/check.svg")  no-repeat  center 
+        #C0E4CA
+        ;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+    }
+
+}
+            }
+        }
+    }
+  
+
+}
+
+.Checkout
+{
+    .right
+
+    {
+         overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    @include Col-start;
+    gap: 25px;
+    width: 100%;
+
+.header
+{
+             text-transform: uppercase;  
+         font-size: 25px; 
+                 font-weight: 600;
+                                  font-family: var(--PlayfairDisplay)
+
+
+
+}
+
+    .orders
+    {
+        width: 100%;
+        >*{
+            margin-bottom: 10px;
+        }
+        .ProductSummary
+        {
+            width: 100%;
+
+
+            .card
+            {
+            height: max-content !important;
+
+            }
+        }
+    }
+
+    .recipt
+    {
+        width: 100%;
+        color: var(--sec-text-color);
+        p{
+            @include between-center;
+            margin-bottom: 8px;
+
+            span{
+                width: 120px;
+            }
+            &.voucher
+            {
+                span{
+                    color: var( --imp-color);
+                }
+            }
+
+            &.total
+            {
+                color: var(--black-color);
+                font-weight: 500;
+            }
+        }
+
+        
+    }
+        
+
+
+
+
+}
+
+}
+
+
+.Checkout
+{
+    .left
+    {
+        overflow-y: auto;
+padding: 10px;
+    }
+    .children
+    {
+width: 90%;
+}
+
+
+
+
+    
+        
+   ::-webkit-scrollbar{
+    width: 6px;
+        visibility: hidden;
+
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--text-color);
+border-radius: 10px;
+    visibility: hidden;
+
+    }
+
+
+   
+    }
+
+
+
+
+    h3 
+    {
+        font-weight: 500;
+        font-size:28px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        margin-bottom: 30px;
+    }
+
+    .submit-checkout 
+{
+  width: 100%;
+  @include end-center;
+  margin-top: 20px;
+ a
+{
+  display: block;
+  background-color: var(--main-color);
+  color: white;
+  width: 250px;
+  @include Centering;
+text-transform: uppercase;
+font-size: 14px;
+  padding: 10px;
+  letter-spacing: 1.5px;
+
+  &:hover
+  {
+    opacity: var(--hover-opcaity);
+  }
+}
+
+
+}
+
+@mixin updateSplit-pos($left,$right)
+{
+          &::after{
+            right: $right;
+                    }
+              &::before{
+                        left: $left;
+                    }
+    
+}
+
+@media (max-width:1200px) {
+.Checkout
+{
+
+     .left .steps .step:nth-child(2)
+    {
+    @include    updateSplit-pos(-125px,-15px);
+      
+    }
+
+}
+
+    
+}
+
+
+@media (max-width:924px) {
+
+    .Checkout
+    {
+        padding: 5px;
+
+        grid-template-columns: 100%;
+        height: 100%;
+        gap: 30px;
+
+        .submit-checkout
+        {
+            margin-top: 30px;
+        }
+        .children
+        {
+            width: 100%;
+        }
+     .left   .steps .step:nth-child(2)
+    {
+        &::before,&::after
+        {
+            width: 120px;
+        }
+          @include    updateSplit-pos(-150px,-35px);
+
+    }
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+@mixin updateSteps($step-width,$split-width,$left,$right,$p-icon)
+{
+     .step
+       {
+        width: $step-width;
+           &:nth-child(2) 
+           {
+
+           &::before,&::after{
+            width: $split-width;
+
+                     }
+
+         @include    updateSplit-pos($left,$right)
+           }
+
+           .icon
+           {
+       padding: $p-icon;
+           }
+       }
+}
+
+
+
+
+@media (max-width:880px) {
+
+  .Checkout .left .steps .step:nth-child(2) 
+
+    {
+         @include    updateSplit-pos(-130px,-15px)
+
+
+    }
+
+
+
+}
+@media (max-width:623px) {
+    .Checkout
+{
+
+     h2
+    {
+        font-size: 38px;
+    }
+
+
+}
+
+}
+
+
+@media (max-width:484px) {
+
+    .Checkout 
+    {
+
+          h3{
+            font-size: 16px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+    .left .steps
+    {
+        @include updateSteps(120px,70px,-85px,-10px,8px);
+        .step p
+        {
+            font-size: 11px;
+            &:nth-of-type(2) 
+            {
+            font-size: 12px;
+
+            }
+        }
+
+    }
+
+        .recipt p 
+        {
+            font-size: 13px;
+        }
+    
+}
+    .Alert p{
+        font-size: 12px;
+    }
+
+
+
+    
+}
+
+@media (max-width:400px) {
+
+    .Checkout 
+    {
+        h2
+        {
+            font-size: 20px;
+        }
+       
+
+    .left .steps
+    {
+        gap: 50px;
+        @include updateSteps(80px,60px,-80px,-35px,8px);
+        .step
+        
+        {
+            height: 100px;
+            p
+        {
+            font-size: 10px;
+            &:nth-of-type(2) 
+            {
+            font-size: 10px;
+
+            }
+        }
+    }
+
+    }
+
+
+    .ContactPerson
+    {
+
+      
+        input[type=text], input[type=tel], input[type=email], select
+        {
+            padding: 9px;
+                            font-size: 10px;
+
+            &::placeholder
+            {
+                font-size: 10px;
+            }
+        }
+       .phone-input .country-code-dropdown
+       {
+         &::after
+                {
+                    top: 56%;
+                }
+        select
+        {
+                padding: 10px 15px 5px 10px;
+               
+        }
+    }
+    }
+
+    .right .header 
+    {
+        font-size: 20px;
+    }
+
+    .submit-checkout a
+{
+    width: 180px;
+    font-size: 9px;
+}
+
+    }
+
+    
+}
+
+
+@media (max-width:374px) {
+
+    .Checkout
+    {
+        h2
+        {
+            font-size: 25px;
+        }
+
+        .left .steps
+        {
+                    @include updateSteps(80px,40px,-55px,-38px,7px);
+
+                    .step p 
+                    {
+width: fit-content;
+                    }
+
+        }
+    }
+
+}
+
+@media (max-width:331px) {
+
+    .Checkout
+    {
+       
+
+        .left .steps
+        {
+                    @include updateSteps(34px,40px,-45px,-45px,7px);
+
+                  
+        }
+    }
+
+}

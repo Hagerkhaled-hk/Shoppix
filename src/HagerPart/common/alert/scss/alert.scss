@@ -1,0 +1,22 @@
+@use "../../../common_scss/commonScss.scss" as *;
+.Alert
+{
+ width: 100%;
+    background-color: #EDE5E1;
+    border: 1px solid #DFD1C8;
+    color: var(--black-color);
+    padding: 8px;
+        @include between-center;
+    
+    a{
+        color: #8B4513;
+        text-decoration: underline;
+         &:hover
+  {
+    opacity: var(--hover-opcaity);
+  }
+    }
+    .exit{
+        cursor: pointer;
+    }
+}

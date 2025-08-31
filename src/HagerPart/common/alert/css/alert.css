@@ -1,0 +1,26 @@
+.Alert {
+  width: 100%;
+  background-color: #EDE5E1;
+  border: 1px solid #DFD1C8;
+  color: var(--black-color);
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Alert a {
+  color: #8B4513;
+  text-decoration: underline;
+}
+.Alert a:hover {
+  opacity: var(--hover-opcaity);
+}
+.Alert .exit {
+  cursor: pointer;
+}

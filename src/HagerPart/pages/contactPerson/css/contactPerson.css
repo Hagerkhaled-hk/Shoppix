@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.ContactPerson {
+  font-family: var(--Lato-Regular);
+  height: 90%;
+}
+.ContactPerson .form-container {
+  margin: 0 auto;
+}
+.ContactPerson .form-section, .ContactPerson .form-row {
+  margin-bottom: 30px;
+}
+.ContactPerson label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--black-color);
+}
+.ContactPerson input[type=text],
+.ContactPerson input[type=tel],
+.ContactPerson input[type=email],
+.ContactPerson select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* To include padding and border in the element's total width and height */
+  font-size: 16px;
+  outline: none;
+  color: var(--sec-text-color);
+}
+.ContactPerson input[type=text]:focus,
+.ContactPerson input[type=tel]:focus,
+.ContactPerson input[type=email]:focus,
+.ContactPerson select:focus {
+  border-color: #a0a0a0;
+}
+.ContactPerson input::-webkit-input-placeholder {
+  color: var(--sec-text-color);
+  font-size: 13px;
+}
+.ContactPerson input::-moz-placeholder {
+  color: var(--sec-text-color);
+  font-size: 13px;
+}
+.ContactPerson input:-ms-input-placeholder {
+  color: var(--sec-text-color);
+  font-size: 13px;
+}
+.ContactPerson input::-ms-input-placeholder {
+  color: var(--sec-text-color);
+  font-size: 13px;
+}
+.ContactPerson input::placeholder {
+  color: var(--sec-text-color);
+  font-size: 13px;
+}
+.ContactPerson h4 {
+  font-size: 18px;
+  color: var(--black-color);
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.ContactPerson .phone-input .phone-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ContactPerson .phone-input .country-code-dropdown {
+  position: relative;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  width: 100px;
+  color: var(--sec-text-color);
+}
+.ContactPerson .phone-input .country-code-dropdown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: none;
+  padding: 12px 35px 12px 12px;
+  cursor: pointer;
+  color: var(--sec-text-color);
+  font-size: 12px;
+}
+.ContactPerson .phone-input .country-code-dropdown::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  color: #888;
+}
+.ContactPerson .phone-input .country-code-dropdown span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 10px;
+  color: #888;
+}
+.ContactPerson .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.ContactPerson .form-row .form-section {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 0;
+}

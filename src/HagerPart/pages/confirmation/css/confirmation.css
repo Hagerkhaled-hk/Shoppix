@@ -1,0 +1,65 @@
+.Confirmation {
+  color: var(--sec-text-color);
+}
+.Confirmation .order-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.Confirmation .order-info h5 {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+  font-weight: normal;
+}
+.Confirmation .order-info p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--black-color);
+}
+.Confirmation .status-tag {
+  background-color: #ffebeb;
+  color: #e57373;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.Confirmation .payment-info-box {
+  border-radius: 5px;
+}
+.Confirmation .payment-info-box h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.Confirmation .payment-info-box p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: var(--black-color);
+}
+
+@media (max-width: 386px) {
+  .Confirmation .status-tag {
+    font-size: 10px;
+  }
+  .Confirmation .order-info h5 {
+    font-size: 15px;
+  }
+  .Confirmation .order-info p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 386px) {
+  .Confirmation .status-tag {
+    font-size: 8px;
+  }
+}

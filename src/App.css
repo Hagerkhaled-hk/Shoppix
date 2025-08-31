@@ -1,0 +1,33 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("assets/fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+
+:root
+{
+    --Lato-Regular:"Lato-Regular";
+    --PlayfairDisplay:"PlayfairDisplay";
+
+    --black-color:#3E3E3E;
+        --text-color:#B4B4B4;
+    --sec-text-color:#757575;
+ --unmain-color:#C7B8B0;
+--main-color:#8B4513;
+--header-font:55px;
+ --imp-color:#E90000;
+--hover-opcaity:0.9;
+
+}

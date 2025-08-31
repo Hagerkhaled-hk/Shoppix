@@ -1,0 +1,26 @@
+@use "../../common_scss/commonScss.scss" as *;
+:root
+{
+  --input-border-color:#3E3E3E;
+}
+.QuantityButton
+{
+ 
+      @include around-center;
+        border: 1px solid var( --input-border-color);
+        width:110px;
+        height: 45px;
+        color: var( --input-border-color);
+
+        button{
+          cursor: pointer;
+width: 50%;
+height: 100%;
+transition: 0.5s;
+
+          &:hover
+          {
+            background-color: rgba(0, 0, 0, 0.05);
+          }
+        }
+}

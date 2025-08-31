@@ -1,0 +1,328 @@
+@use "../../../common_scss/commonScss.scss" as * ;
+
+
+.Cart
+{
+    margin: 50px 0px;
+font-family: var(--Lato-Regular);  
+                    color: var(--black-color);
+padding: 25px;
+height: fit-content;
+overflow: hidden;
+.header
+{
+    font-family: var(--PlayfairDisplay);
+    font-size: var(--header-font);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.cart-InnerContainer{
+
+display: grid;
+grid-template-columns: 1.2fr 0.8fr;
+justify-content: center;
+align-items: flex-start;
+position: relative;
+height: 70vh;
+
+
+
+.left 
+{
+    width: 85%;
+    overflow-y: auto;
+    height: 100%;
+    .cards
+    {
+        height: fit-content;
+    >* 
+    {
+        margin-bottom: 20px;
+        padding:0px 10px;
+    }
+
+
+
+    .ProductSummary
+    {
+        width: 100%;
+    }
+    
+}
+
+&::-webkit-scrollbar,&::-webkit-scrollbar-thumb
+{
+visibility: hidden;
+width: 8px;
+background-color: rgba(128, 128, 128, 0.2);   
+}
+
+
+}
+
+}
+}
+
+
+.Cart
+{
+
+    .right
+{
+   width: 80%;
+    div,p{
+        width: 100%;
+    }
+
+        .header
+        {
+         text-transform: uppercase;  
+         font-size: 25px; 
+         margin-bottom: 15px;
+                 font-weight: 600;
+
+        }
+
+
+
+.shopping-info
+{
+        @include Col-start-around;
+        gap: 20px;
+   
+
+
+.total
+{
+    @include Col-start-around;
+    gap: 20px;
+    p{
+
+        @include between-center;
+        &:first-child
+        {
+            color: var(--sec-text-color);
+            font-size: 18px;
+        }
+
+        &:last-child
+        {
+            font-weight: 600;
+                        font-size: 17px;
+
+        }
+    }
+    }
+
+
+
+    .toCheckout
+    {
+        background-color: var(--main-color);
+        color: white;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 10px;
+        letter-spacing: 1.1px;
+        @include Centering;
+        cursor: pointer;
+    }
+}
+
+
+
+
+}
+
+
+
+
+}
+
+
+@mixin updateText($name,$price,$delete)
+{
+    .card .text
+{
+
+.name
+{
+    font-size:$name;
+}
+
+.price p
+{
+    font-size: $price;
+
+}
+.buttons .delete a
+{
+    font-size:$delete;
+}
+
+
+  
+  
+.ProductSummary .QuantityButton
+{
+    width: 70px;
+}
+
+}
+}
+
+
+@media (max-width:1200px) {
+    
+   .Cart .right .Alert
+    {
+        p,svg{
+            font-size: 12px;
+        }
+      
+    }
+    
+}
+
+
+@media (max-width:790px) {
+    .Cart .right .toCheckout
+    {
+    font-size: 12px;
+
+    }
+}
+
+@media (max-width:773px) {
+.Cart .cart-InnerContainer
+{
+    grid-template-columns: 100%;
+    gap: 5px;
+    height: 100%;
+
+    >*
+    {
+        width: 100% !important;
+    }
+
+        .right .toCheckout
+    {
+    font-size: 15px;
+
+    }
+ 
+}
+
+}
+
+
+
+@media (max-width:395px) {
+.Cart .cart-InnerContainer
+{
+
+    @include updateText(14px,12px,11px);
+
+.right
+{
+    .total
+    {
+        p{
+            &:first-child
+            {
+                font-size: 14px;
+            }
+            &:last-child
+            {
+                font-size: 15px;
+            }
+        }
+    }
+
+.toCheckout
+    {
+    font-size: 10px;
+
+    }
+    }
+
+    .note input::placeholder
+    {
+        font-size: 12px;
+    }
+
+}}
+
+
+
+@media (max-width:336px) {
+    
+    .Cart .cart-InnerContainer
+
+{
+   
+    .ProductSummary .QuantityButton
+{
+    width: 50px;
+    font-size: 13px;
+}
+
+
+
+.note input::placeholder
+{
+    font-size: 10px;
+}
+}
+
+
+
+
+}
+
+
+@media (max-width:290px) {
+    
+      .Cart .cart-InnerContainer
+{
+        @include updateText(12px,10px,10px);
+
+
+.card .text
+{
+
+.buttons 
+{
+
+flex-direction: column;
+align-items: flex-end;
+gap: 8px;
+
+
+  
+.ProductSummary .QuantityButton
+{
+
+    width: 30px;
+
+        font-size: 10px;
+}
+
+}
+
+}
+.note input
+{
+    padding: 3px;
+
+::placeholder
+{
+    font-size: 8px;
+}   
+}
+
+}  
+
+
+}

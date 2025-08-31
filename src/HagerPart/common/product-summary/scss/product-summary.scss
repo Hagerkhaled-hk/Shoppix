@@ -1,0 +1,214 @@
+@use "../../../common_scss/commonScss.scss" as * ;
+
+$width-product-summary: 420px;
+        $delete-color:#929292;
+    $imp-color:#E90000;
+
+
+.ProductSummary
+{
+
+@include Col-start-between;
+gap: 20px;
+width: $width-product-summary;
+
+
+
+    .card 
+    {
+        @include start;
+        gap: 15px;
+width: 100%;
+    height: 140px;
+
+
+                .image
+{
+    width: 150px;
+    height: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+                .text
+
+            {
+
+                @include Col-start-around;
+                height: 100%;
+                width: 100%;
+
+
+.name
+{
+    text-transform: uppercase;
+    color: var(--black-color);
+    font-size: 18px;
+}
+
+.price
+{
+    p{
+                    font-size: 14px; 
+
+
+
+     //old price
+   &:first-child
+        {
+      font-weight: 500;
+      margin-bottom: 2px;
+@include Start-center;
+
+            span
+            {
+// price
+
+                &:first-child
+                {  
+                        text-decoration: line-through;
+      margin: 0px;
+color: var(--text-color);
+
+                }
+
+//sale
+                &:last-child{
+
+ text-decoration: none !important;
+color: white;
+background-color: #E90000 ;
+border-radius: 100px;
+padding:2px 8px;
+margin-left: 5px;
+font-size: 8px;
+
+                }
+
+}
+
+        }
+
+
+        //current price
+
+        &:last-child
+        {
+            color:$imp-color;
+            font-weight: 500;
+        }
+    }
+}
+
+.buttons
+{width: 100%;
+    @include between-center;
+    .delete
+    {
+border-bottom: 1px solid $delete-color;
+transition: 0.2s;
+        a{
+            color: $delete-color;
+            @include Centering;
+            font-size: 13px;
+            transition: 0.2s;
+
+            span{
+                margin-right: 5px;
+            }
+
+        }
+&:hover
+{
+    border-color: $imp-color;
+    a{
+
+        color:$imp-color;
+    }
+
+}
+
+    }
+}
+            }
+
+
+
+
+
+
+    }
+
+
+    .note
+{
+    width: 100%;
+
+p 
+{
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+    input{
+        width: 100%;
+        outline: none;
+        padding: 5px;
+        border: 1px solid var( --text-color);
+        transition: 0.2px;
+        &::placeholder{
+            color: var(--text-color);
+            font-size: 13px;
+        }
+        &:focus
+        {
+border-color: var(--input-border-color);
+        }
+    }
+}
+}
+
+.ProductSummary
+{
+
+
+    .QuantityButton
+    {
+        width: 90px;
+        height: 30px;
+    }
+}
+
+
+.checkoutForm
+{
+.card
+{
+    height: 100px;
+
+    .image
+{
+    width: 100px;
+}
+
+.text
+{
+     font-size: 13px;
+     color: var(--sec-text-color);
+     @include  Col-start;
+    .name{
+        font-size: 15px;
+    }
+    .check-quote
+    {
+        color: var(--imp-color);
+    }
+}
+}
+}
+
+

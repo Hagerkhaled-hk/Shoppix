@@ -1,0 +1,121 @@
+@use "../../../common_scss/commonScss.scss"as *;
+
+.ContactPerson
+{
+  font-family: var( --Lato-Regular);
+
+height:90%;
+.form-container {
+  margin: 0 auto;
+}
+
+
+.form-section,.form-row {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],  
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* To include padding and border in the element's total width and height */
+  font-size: 16px;
+  outline: none;
+    color: var(--sec-text-color);
+
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #a0a0a0;
+}
+
+input::placeholder {
+    color: var(--sec-text-color);
+  font-size: 13px;
+}
+
+h4 {
+  font-size: 18px;
+  color:var(--black-color);
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.phone-input .phone-group {
+  display: flex;
+  align-items: center;
+}
+
+.phone-input .country-code-dropdown {
+  position: relative;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  width: 100px;
+    color: var(--sec-text-color);
+
+}
+
+.phone-input .country-code-dropdown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: none;
+  padding: 12px 35px 12px 12px;
+  cursor: pointer;
+    color: var(--sec-text-color);
+    font-size: 12px;
+}
+.phone-input .country-code-dropdown::after {
+  content: '▼'; 
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #888;
+}
+
+.phone-input .country-code-dropdown span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: #888;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-section {
+  flex-basis: 50%;
+  margin-bottom: 0;
+}
+
+
+
+}
