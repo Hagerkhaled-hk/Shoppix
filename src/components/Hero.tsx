@@ -31,11 +31,11 @@ const HeroSection = () => {
     </div>
 
       {/* المحتوى الرئيسي */}
-      <div className="absolute left-12 top-1/2 transform -translate-y-1/2 text-white ">
-        <h1 className="text-2xl md:text-5xl font-light leading-snug mb-6 font-semibold">
+      <div className=" text-white text-center absolute left-1/2 top-1/3 mt-24 transform -translate-x-1/2 -translate-y-1/2">
+        <h1 className="text-3xl mb-10 md:text-5xl font-light leading-snug mb-6 font-semibold">
           DISCOVER THE ART OF <br /> DRESSING UP
         </h1>
-        <button className="bg-[#8B4513] text-white px-6 py-3 text-sm tracking-widest hover:opacity-90 transition-all">
+        <button className="bg-[#8B4513] border border-[#fff] font-bold rounded text-white px-6 py-3 text-sm tracking-widest hover:bg-[#fff] hover:text-[#8B4513] transition-all">
           SHOP NOW →
         </button>
       </div>

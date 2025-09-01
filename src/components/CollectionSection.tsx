@@ -16,7 +16,7 @@ const collections: CollectionItem[] = [
 
 const CollectionSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-24 light-section" >
+    <section className="container m-auto bg-white py-24 light-section" >
       <div className="grid gap-4 px-6 md:px-12 mt-12 grid-cols-1 md:grid-cols-3">
         {collections.map((item, index) => (
           <div
