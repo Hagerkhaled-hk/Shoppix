@@ -17,12 +17,14 @@ async function handleSubmit()
   console.log(true);
   
        let FormData= {
-      username: inputRefs.current.email?.value || '',
+      email: inputRefs.current.email?.value || '',
       password: inputRefs.current.password?.value || ''
     };
+    console.log(FormData);
+    
 
     let res= await  Login_Api(FormData);
- localStorage.setItem("token",JSON.stringify(res));
+ localStorage.setItem("token",res);
    navigate("/");
 
     

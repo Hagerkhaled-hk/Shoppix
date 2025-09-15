@@ -2,6 +2,8 @@
 
 export default async function CreateAPi_Function (initialUrl,intialData){
 
+    console.log(initialUrl,intialData);
+    
  try {
 
     let res = await  fetch(initialUrl,{
@@ -17,8 +19,13 @@ export default async function CreateAPi_Function (initialUrl,intialData){
     } 
 
 
-return await res.json();
-       }
+const contentType = res.headers.get("content-type");
+        if (contentType && contentType.includes("application/json")) {
+            return await res.json();
+        } else {
+            return await res.text();
+        }       
+           }
         catch(error)
         {
  throw new Error (error.message);
